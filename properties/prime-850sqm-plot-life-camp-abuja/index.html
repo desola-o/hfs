@@ -120,24 +120,40 @@
       }
     }
 
-    /* ---------- Button Normalization ---------- */
-    .button {
+    /* ---------- Perfect Button Normalization & Vertical Centering ---------- */
+    .button,
+    .button.button-text-only,
+    .nav-button-div .button {
       display: inline-flex !important;
       align-items: center !important;
       justify-content: center !important;
       text-align: center !important;
-      vertical-align: middle;
-      font-family: inherit;
-      line-height: 1.2;
-      gap: 8px;
+      vertical-align: middle !important;
+      font-family: inherit !important;
+      line-height: 1 !important;
+      padding: 13px 24px !important;
+      min-height: 42px !important;
+      gap: 8px !important;
+      box-sizing: border-box !important;
+      border-radius: 50px !important;
+      text-decoration: none !important;
     }
-    .button > * { margin: 0 !important; }
+    .button > *,
+    .button span,
+    .button div {
+      margin: 0 !important;
+      padding: 0 !important;
+      line-height: 1 !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
     .button[disabled] { opacity: 0.65; cursor: not-allowed !important; }
 
-    /* ---------- Detail Section Layout ---------- */
+    /* ---------- Detail Section Layout with Generous Breathing Space ---------- */
     .detail-hero-section {
       background-color: #ffffff;
-      padding-top: 150px;
+      padding-top: 150px; /* Generous breathing room below floating navbar */
       padding-bottom: 28px;
       border-bottom: 1px solid #eae6df;
       width: 100%;
@@ -166,7 +182,7 @@
       background: transparent !important;
       color: #111111 !important;
       border: 1px solid #111111 !important;
-      padding: 5px 14px;
+      padding: 6px 14px;
       border-radius: 50px;
       font-size: 11px;
       font-weight: 700;
@@ -174,6 +190,7 @@
       text-transform: uppercase;
       margin-bottom: 14px;
       margin-right: 6px;
+      line-height: 1 !important;
     }
 
     .property-h1 {
@@ -242,8 +259,9 @@
     .action-pill-btn {
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       gap: 6px;
-      padding: 9px 18px;
+      padding: 10px 20px;
       border-radius: 50px;
       font-size: 13px;
       font-weight: 600;
@@ -253,6 +271,7 @@
       background: #111111 !important;
       color: #ffffff !important;
       border: 1px solid #111111 !important;
+      line-height: 1 !important;
     }
     .action-pill-btn:hover {
       background: #2a2a2a !important;
@@ -265,7 +284,7 @@
       font-weight: 600;
     }
 
-    /* Video Player Layout */
+    /* Natural Landscape Video Showcase */
     .media-container-single {
       width: 100%;
       margin: 24px 0 36px 0;
@@ -290,7 +309,7 @@
       border-radius: 20px;
     }
 
-    /* Content Layout + Sticky Sidebar */
+    /* ---------- Content Layout + Sticky Sidebar ---------- */
     .detail-body-grid {
       display: grid;
       grid-template-columns: 1fr 380px;
@@ -356,14 +375,14 @@
       margin-bottom: 16px;
     }
 
-    /* Highlights Categorized Grid (Reverted to Blue Titles & Blue Checkmarks) */
+    /* Highlights Categorized Grid (Blue Subtitles + Blue Checkmarks) */
     .feature-category-block {
       margin-bottom: 20px;
     }
     .feature-category-title {
       font-size: 13.5px;
       font-weight: 700;
-      color: #1877f2 !important; /* Reverted to Blue */
+      color: #1877f2 !important;
       text-transform: uppercase;
       letter-spacing: 0.5px;
       margin-bottom: 10px;
@@ -387,7 +406,7 @@
       border: 1px solid #ebe8e1;
     }
     .highlight-icon {
-      color: #1877f2 !important; /* Reverted to Blue */
+      color: #1877f2 !important;
       font-weight: bold;
     }
 
@@ -471,6 +490,10 @@
       box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
       border: 1px solid #111111 !important;
       transition: background 0.2s ease, transform 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1 !important;
     }
     .sidebar-submit-btn:hover {
       background: #2a2a2a !important;
@@ -494,6 +517,7 @@
       box-sizing: border-box;
       border: 1px solid #111111 !important;
       transition: background 0.2s ease, transform 0.15s ease;
+      line-height: 1 !important;
     }
     .whatsapp-direct-btn:hover {
       background: #2a2a2a !important;
@@ -554,9 +578,9 @@
         </nav>
         <div class="nav-button-wrapper">
           <div class="nav-button-div">
-            <!-- All Listings CTA: Reverted to Blue -->
-            <a href="/#properties" class="button button-text-only w-inline-block" style="background: #1877f2 !important; color: #ffffff !important; border: 1px solid #1877f2 !important; border-radius: 50px;">
-              <div>All Listings</div>
+            <!-- Blue All Listings Button with Balanced Centering -->
+            <a href="/#properties" class="button button-text-only w-inline-block" style="background: #1877f2 !important; color: #ffffff !important; border: 1px solid #1877f2 !important;">
+              <span>All Listings</span>
             </a>
           </div>
           <div class="menu-button w-nav-button" aria-label="menu" role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
