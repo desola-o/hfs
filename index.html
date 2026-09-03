@@ -50,6 +50,18 @@
       padding: 16px 24px !important;
     }
 
+    /* Header specific black button */
+    .header-browse-btn {
+      background-color: #111111 !important;
+      color: #ffffff !important;
+      border: 1px solid #111111 !important;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+    .header-browse-btn:hover {
+      background-color: #333333 !important;
+      color: #ffffff !important;
+    }
+
     /* ---------- Focus visibility ---------- */
     .button:focus-visible,
     a:focus-visible,
@@ -258,17 +270,27 @@
       flex-grow: 1;
       background: #ffffff;
     }
+    
+    /* Prominent Location Pill */
     .prop-location-pin {
-      display: flex;
+      display: inline-flex;
       align-items: center;
-      gap: 5px;
-      color: #737373;
-      font-size: 11.5px;
-      font-weight: 600;
-      margin-bottom: 8px;
-      text-transform: uppercase;
-      letter-spacing: 0.6px;
+      gap: 7px;
+      color: #111111;
+      background: #f1f3f5;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: 0.2px;
+      width: fit-content;
+      border: 1px solid #e2e5e9;
     }
+    .prop-location-pin svg {
+      color: #111111;
+    }
+
     .prop-title {
       font-size: 19px;
       font-weight: 700;
@@ -282,7 +304,8 @@
       transition: color 0.2s ease;
     }
     .prop-card:hover .prop-title a {
-      color: #1877f2;
+      color: #111111;
+      text-decoration: underline;
     }
     .prop-summary {
       font-size: 13px;
@@ -341,16 +364,10 @@
       gap: 6px;
     }
     .prop-price-value {
-      font-size: 20px;
+      font-size: 24px;
       font-weight: 800;
-      color: #1c1d1f;
+      color: #111111;
       line-height: 1.15;
-    }
-    .prop-price-usd {
-      font-size: 14px;
-      font-weight: 700;
-      color: #1877f2;
-      letter-spacing: -0.2px;
     }
 
     .properties-trust-bar {
@@ -375,7 +392,7 @@
       width: 20px;
       height: 20px;
       border-radius: 50%;
-      background: #1877f2;
+      background: #111111;
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -472,7 +489,7 @@
         </a>
         <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
           <div class="nav-menu-div">
-            <a href="#benefits" class="nav-link w-nav-link">Benefits</a>
+            <a href="#about-us" class="nav-link w-nav-link">About Us</a>
             <a href="#properties" class="nav-link w-nav-link">Properties</a>
             <a href="#how-it-works" class="nav-link w-nav-link">How It Works</a>
             <a href="#presence" class="nav-link w-nav-link">Presence</a>
@@ -482,7 +499,7 @@
         </nav>
         <div class="nav-button-wrapper">
           <div class="nav-button-div">
-            <a data-wf--button--variant="blue-button" href="#properties" class="button w-variant-d11fa7e6-b29a-b1ba-e4f8-3b98172af6f3 button-text-only w-inline-block">
+            <a href="#properties" class="button header-browse-btn button-text-only w-inline-block">
               <div>Browse Listings</div>
             </a>
           </div>
@@ -532,8 +549,8 @@
     </div>
   </section>
 
-  <!-- ==================== WHAT WE DO SECTION ==================== -->
-  <section id="benefits" class="about-section">
+  <!-- ==================== ABOUT US SECTION ==================== -->
+  <section id="about-us" class="about-section">
     <div class="w-layout-blockcontainer container w-container">
       <div class="about-heading-wrapper">
         <div class="common-heading-div">
@@ -553,10 +570,10 @@
               </div>
               <img src="https://cdn.prod.website-files.com/6912d240c4d840129af0d1d2/6912e9f778fa548ba786d793_leaves2.svg" loading="lazy" alt="" class="about-leaves-image">
             </div>
-            <div class="paragraph">Trusted by 200+ Diasporians</div>
+            <div class="paragraph">Trusted by 200+ African Diasporans</div>
           </div>
           <div data-w-id="5a1b5e81-4f9c-b8a3-c27c-a0007e671fa6" class="about-heading-div">
-            <h2>What We Do</h2>
+            <h2>About Us</h2>
           </div>
           <p data-w-id="d218ff0b-7471-d34a-1f1b-96f772ebfc7c" class="paragraph about-paragraph">
             We've simplified property ownership across Africa for the diaspora, addressing key challenges around trust, verification, and remote oversight. From full property ownership to turnkey developments, we guide you every step of the way.
@@ -566,18 +583,18 @@
         <!-- Stats Block -->
         <div class="about-count-wrapper">
           <div data-w-id="b2dbd0f5-b797-da00-80d4-5d96dea8c559" class="about-count-div">
-            <h3>100+</h3>
-            <div class="paragraph about-count-text">Properties Sold</div>
+            <h3>100%</h3>
+            <div class="paragraph about-count-text">Regulated &amp; Compliant</div>
           </div>
           <div data-w-id="37418e36-7a1a-c9dd-2a45-3f5e5faa93de" class="about-count-line"></div>
           <div data-w-id="2c5fe788-4b97-0d78-aeea-18ccdfc64e6e" class="about-count-div">
-            <h3>N25B+</h3>
-            <div class="paragraph about-count-text">Volume Transacted</div>
+            <h3>100%</h3>
+            <div class="paragraph about-count-text">Verified Titles</div>
           </div>
           <div data-w-id="31675b33-ad9d-1dfb-c802-077aa80b2644" class="about-count-line"></div>
           <div data-w-id="acf6aa33-d1c5-1d9e-568b-af9704ccae00" class="about-count-div">
-            <h3>100%</h3>
-            <div class="paragraph about-count-text">Verified Titles</div>
+            <h3>Zero</h3>
+            <div class="paragraph about-count-text">Hidden Fees</div>
           </div>
         </div>
       </div>
@@ -588,7 +605,7 @@
   <section id="properties" class="properties-section-clean">
     <div class="w-layout-blockcontainer container w-container">
       <div class="common-heading-div text-center margin-bottom">
-        <div class="paragraph line-height" style="color: #1877f2; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Direct Developer &amp; Verified Briefs</div>
+        <div class="paragraph line-height" style="color: #111111; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Direct Developer &amp; Verified Briefs</div>
         <div class="gallery-heading-div">
           <h2>Featured Properties</h2>
         </div>
@@ -613,8 +630,8 @@
           </div>
           <div class="prop-content">
             <div class="prop-location-pin">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-              NNPC Estate, Life Camp, Abuja
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>NNPC Estate, Life Camp, Abuja</span>
             </div>
             <h3 class="prop-title">
               <a href="https://houseforsale.growthmonkey.xyz/properties/prime-850sqm-plot-life-camp-abuja">Prime 850 SQM Residential Plot</a>
@@ -631,8 +648,7 @@
               <div class="prop-price-block">
                 <span class="prop-price-label">Distress Price</span>
                 <div class="prop-price-container">
-                  <span class="prop-price-value">N120,000,000</span>
-                  <span class="prop-price-usd">(~$80,000 USD)</span>
+                  <span class="prop-price-value">$80,000 USD</span>
                 </div>
               </div>
             </div>
@@ -652,8 +668,8 @@
           </div>
           <div class="prop-content">
             <div class="prop-location-pin">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-              Jabi Lake District, Abuja
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Jabi Lake District, Abuja</span>
             </div>
             <h3 class="prop-title">
               <a href="https://houseforsale.growthmonkey.xyz/properties/4-bedroom-terrace-duplex-jabi-abuja">4-Bedroom Terrace + BQ</a>
@@ -670,8 +686,7 @@
               <div class="prop-price-block">
                 <span class="prop-price-label">Starting From</span>
                 <div class="prop-price-container">
-                  <span class="prop-price-value">N600,000,000</span>
-                  <span class="prop-price-usd">(~$400,000 USD)</span>
+                  <span class="prop-price-value">$400,000 USD</span>
                 </div>
               </div>
             </div>
@@ -691,8 +706,8 @@
           </div>
           <div class="prop-content">
             <div class="prop-location-pin">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-              Serene Mini-Estate, Mabushi
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Serene Mini-Estate, Mabushi, Abuja</span>
             </div>
             <h3 class="prop-title">
               <a href="https://houseforsale.growthmonkey.xyz/properties/mabushi-2bed-apartment">Luxury 2-Bedroom Apartment</a>
@@ -709,8 +724,7 @@
               <div class="prop-price-block">
                 <span class="prop-price-label">Starting From</span>
                 <div class="prop-price-container">
-                  <span class="prop-price-value">N170,000,000</span>
-                  <span class="prop-price-usd">(~$113,000 USD)</span>
+                  <span class="prop-price-value">$113,000 USD</span>
                 </div>
               </div>
             </div>
@@ -1019,7 +1033,7 @@
             <strong style="color: #000000 !important;">Houseforsale.africa</strong>
           </a>
           <div class="footer-link-div">
-            <a href="#benefits" class="paragraph">Benefits</a>
+            <a href="#about-us" class="paragraph">About Us</a>
             <a href="#properties" class="paragraph">Properties</a>
             <a href="#how-it-works" class="paragraph">How It Works</a>
             <a href="#presence" class="paragraph">Presence</a>
