@@ -33,13 +33,16 @@
       display: flex;
     }
 
-    /* Keep Hero Heading cleanly on two lines in desktop view */
+    /* Keep Hero Heading cleanly on two lines & stretch subtext in desktop view */
     @media screen and (min-width: 992px) {
       .hero-heading-div {
         max-width: 880px !important;
       }
       .hero-desktop-br {
         display: inline;
+      }
+      .hero-paragraph {
+        max-width: 880px !important;
       }
     }
 
@@ -280,7 +283,6 @@
       z-index: 2;
     }
 
-    /* Moved Play Button to Center */
     .prop-video-btn {
       position: absolute;
       top: 50%;
