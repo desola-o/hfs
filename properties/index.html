@@ -1,13 +1,14 @@
-<html lang="en" data-wf-domain="Houseforsale.africa" class="w-mod-js w-mod-ix w-mod-js"><head>
+<!DOCTYPE html>
+<html lang="en" data-wf-domain="Houseforsale.africa" data-wf-page="6912d240c4d840129af0d1d1" data-wf-site="6912d240c4d840129af0d1d2" class="w-mod-js w-mod-ix">
+<head>
   <meta charset="utf-8">
-  <style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style>
   <title>Available Properties | Houseforsale.africa</title>
   <meta content="Explore verified luxury homes, apartments, and prime residential land across Abuja with digital video walkthroughs and 100% legal security." name="description">
   <meta content="Available Properties | Houseforsale.africa" property="og:title">
   <meta content="Explore verified luxury homes, apartments, and prime residential land across Abuja with digital video walkthroughs and 100% legal security." property="og:description">
   <meta content="https://res.cloudinary.com/dyowwzpmo/image/upload/v1789667318/hfs_5_zg8eea.png" property="og:image">
   <meta content="summary_large_image" name="twitter:card">
-  <meta content="width=device-width, initial-scale=1, maximum-scale=5" name="viewport">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
   
   <link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous">
@@ -18,105 +19,18 @@
   <link href="https://cdn.prod.website-files.com/6912d240c4d840129af0d1d2/6915da85541b71602a831812_webclip.png" rel="apple-touch-icon">
 
   <style>
-    /* ---------- Global Reset & Grid Alignment ---------- */
-    *, *:before, *:after { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    /* ---------- Base Resets & Page Smooth Scroll ---------- */
+    html {
+      scroll-behavior: smooth;
+    }
     body {
-      overflow-x: hidden;
-      width: 100%;
       background-color: #f8f9fa;
       color: #1c1d1f;
       margin: 0;
       padding: 0;
     }
 
-    .w-container,
-    .container.w-container {
-      max-width: 1200px !important;
-      width: 100% !important;
-      margin-left: auto !important;
-      margin-right: auto !important;
-      padding-left: 20px !important;
-      padding-right: 20px !important;
-    }
-
-    /* Fixed Floating Header */
-    .header.w-nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-      background: transparent;
-      padding-top: 14px;
-    }
-    .header .nav-wrapper {
-      width: 100%;
-      margin: 0 auto;
-      background: #ffffff;
-      border-radius: 50px;
-      padding: 8px 18px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-      border: 1px solid #eae6df;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    /* Mobile Navbar Dropdown */
-    @media (max-width: 991px) {
-      .header.w-nav {
-        padding-top: 10px;
-      }
-      .nav-menu-wrapper.w-nav-menu,
-      .w-nav-menu {
-        position: fixed !important;
-        top: 75px !important;
-        left: 16px !important;
-        right: 16px !important;
-        background: #ffffff !important;
-        border-radius: 20px !important;
-        box-shadow: 0 20px 48px rgba(0, 0, 0, 0.16) !important;
-        border: 1px solid #eae6df !important;
-        padding: 20px !important;
-        display: none;
-        flex-direction: column !important;
-        gap: 6px !important;
-        z-index: 1001 !important;
-        width: auto !important;
-        max-width: none !important;
-      }
-      .w-nav-menu.w--open {
-        display: flex !important;
-      }
-      .nav-link.w-nav-link {
-        padding: 12px 16px !important;
-        font-size: 15px !important;
-        font-weight: 600 !important;
-        color: #1c1d1f !important;
-        border-radius: 10px !important;
-        text-align: left !important;
-        width: 100% !important;
-        display: block !important;
-      }
-      .nav-link.w-nav-link:hover {
-        background: #f4f1eb !important;
-      }
-      .menu-button.w-nav-button {
-        display: flex !important;
-        align-items: center;
-        justify-content: center;
-        width: 38px;
-        height: 38px;
-        border-radius: 50%;
-        background: #f4f1eb;
-        cursor: pointer;
-        padding: 0 !important;
-        margin-left: 8px;
-      }
-    }
-
-    /* Button normalization */
+    /* ---------- Exact Button Styles from Paste 1 ---------- */
     .button {
       display: inline-flex !important;
       align-items: center !important;
@@ -127,26 +41,140 @@
       font-family: inherit;
       line-height: 1.2;
       gap: 8px;
+      font-size: 13px !important;
+    }
+    .button > * {
+      margin: 0 !important;
+    }
+    .button[disabled] {
+      opacity: 0.65;
+      cursor: not-allowed !important;
     }
     .button.button-text-only {
       display: inline-flex !important;
       align-items: center !important;
       justify-content: center !important;
-      padding: 12px 22px !important;
-      border-radius: 50px !important;
-      font-size: 13.5px !important;
-      font-weight: 600 !important;
-      text-decoration: none !important;
+      text-align: center !important;
+      padding: 16px 24px !important;
     }
 
-    /* Properties Section Direct Layout */
+    /* Header specific black button from Paste 1 */
+    .header-browse-btn {
+      background-color: #111111 !important;
+      color: #ffffff !important;
+      border: 1px solid #111111 !important;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+    .header-browse-btn:hover {
+      background-color: #333333 !important;
+      color: #ffffff !important;
+    }
+
+    /* Focus accessibility from Paste 1 */
+    .button:focus-visible,
+    a:focus-visible,
+    .menu-button:focus-visible {
+      outline: 2px solid #111111;
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+
+    /* Skip link from Paste 1 */
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      z-index: 9999;
+      background: #111111;
+      color: #ffffff;
+      padding: 10px 18px;
+      border-radius: 0 0 8px 0;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    .skip-link:focus {
+      left: 0;
+      color: #ffffff;
+    }
+
+    /* -------------------------------------------------------------
+       PROPERTIES SECTION (PASTE 2)
+    ------------------------------------------------------------- */
     .properties-section-clean {
       background-color: #f8f9fa;
-      padding-top: 145px;
+      padding-top: 130px;
       padding-bottom: 90px;
       position: relative;
     }
 
+    @media screen and (max-width: 991px) {
+      .properties-section-clean {
+        padding-top: 110px;
+      }
+    }
+
+    /* Filter & Sort Bar */
+    .filter-sort-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 32px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #eae6df;
+    }
+    .filter-tabs {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .filter-btn {
+      background: #ffffff;
+      border: 1px solid #e2e5e9;
+      color: #555555;
+      padding: 8px 18px;
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: inherit;
+    }
+    .filter-btn:hover {
+      background: #f4f1eb;
+      color: #111111;
+    }
+    .filter-btn.active {
+      background: #111111;
+      color: #ffffff;
+      border-color: #111111;
+    }
+    .sort-control-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .sort-label {
+      font-size: 13px;
+      font-weight: 600;
+      color: #777777;
+    }
+    .sort-select {
+      background: #ffffff;
+      border: 1px solid #e2e5e9;
+      border-radius: 50px;
+      padding: 8px 18px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #1c1d1f;
+      outline: none;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    /* 3-Column Property Grid */
     .property-grid-custom {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -166,10 +194,6 @@
     .prop-card:hover {
       transform: translateY(-6px);
       box-shadow: 0 20px 48px rgba(0, 0, 0, 0.12);
-    }
-
-    .prop-card.hidden-card {
-      display: none !important;
     }
 
     .prop-media-wrapper {
@@ -327,66 +351,7 @@
       color: #666666;
     }
 
-    .load-more-container {
-      text-align: center;
-      margin-top: 48px;
-    }
-    .load-more-btn {
-      background: #111111 !important;
-      color: #ffffff !important;
-      padding: 14px 34px !important;
-      border-radius: 50px !important;
-      font-size: 14px !important;
-      font-weight: 700 !important;
-      border: 1px solid #111111 !important;
-      cursor: pointer;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-      transition: background 0.2s ease, transform 0.15s ease;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .load-more-btn:hover {
-      background: #2a2a2a !important;
-      transform: translateY(-2px);
-    }
-
-    .properties-trust-bar {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 28px;
-      margin-top: 55px;
-      padding-top: 25px;
-      border-top: 1px solid #eae6df;
-    }
-    .trust-bar-item {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      color: #2b2b2b;
-      font-size: 13.5px;
-      font-weight: 600;
-      letter-spacing: 0.2px;
-    }
-    .trust-check-icon {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background: #111111;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      color: #ffffff;
-      font-size: 11px;
-      font-weight: bold;
-    }
-
     @media (max-width: 991px) {
-      .properties-section-clean {
-        padding-top: 125px;
-      }
       .property-grid-custom {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -394,51 +359,51 @@
     }
 
     @media (max-width: 768px) {
-      .properties-section-clean {
-        padding-top: 115px;
-      }
       .property-grid-custom {
         grid-template-columns: 1fr;
         gap: 24px;
       }
-      .properties-trust-bar {
-        gap: 14px;
+      .filter-sort-bar {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+      }
+      .sort-control-wrap {
+        width: 100%;
+        justify-content: space-between;
       }
     }
   </style>
 </head>
 
 <body>
+  <a href="#main" class="skip-link">Skip to main content</a>
 
-  <!-- ==================== NAVIGATION ==================== -->
-  <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="header w-nav">
+  <!-- ==================== EXACT TOP NAV BAR (PASTE 1) ==================== -->
+  <div data-w-id="38114ec9-7a18-ee4a-288a-21521a52bb61" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="header w-nav" style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
     <div class="container w-container">
       <div class="nav-wrapper">
-        <a href="/" class="brand-link w-nav-brand">
+        <a href="/" aria-current="page" class="brand-link w-nav-brand w--current" aria-label="home">
           <strong>Houseforsale.africa</strong>
         </a>
         <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
           <div class="nav-menu-div">
-            <a href="/#about-us" class="nav-link w-nav-link">About Us</a>
-            <a href="/properties" class="nav-link w-nav-link w--current" style="color: #111111; font-weight: 700;">Properties</a>
-            <a href="/#how-it-works" class="nav-link w-nav-link">How It Works</a>
-            <a href="/#presence" class="nav-link w-nav-link">Presence</a>
-            <a href="/#testimonials" class="nav-link w-nav-link">Testimonials</a>
-            <a href="/#alerts" class="nav-link w-nav-link">Get Alerts</a>
+            <a href="https://houseforsale.africa/properties" class="nav-link w-nav-link" style="max-width: 1440px;">Buy</a>
+            <a href="https://houseforsale.africa/sell-a-property" class="nav-link w-nav-link" style="max-width: 1440px;">Sell</a>
+            <a href="https://houseforsale.africa/resources" class="nav-link w-nav-link" style="max-width: 1440px;">Resources</a>
           </div>
         </nav>
         <div class="nav-button-wrapper">
           <div class="nav-button-div">
-            <a href="https://chat.whatsapp.com/INbfg9gBwnFCKoypELaXuB?mode=gi_t" target="_blank" rel="noopener noreferrer" class="button button-text-only w-inline-block" style="background-color: #111111 !important; color: #ffffff !important; border: 1px solid #111111 !important;">
-              <div>Join WhatsApp Group</div>
+            <a href="https://chat.whatsapp.com/INbfg9gBwnFCKoypELaXuB?mode=gi_t" target="_blank" rel="noopener noreferrer" class="button header-browse-btn button-text-only w-inline-block">
+              <div>Join our property Whatsapp group</div>
             </a>
           </div>
-          <div class="menu-button w-nav-button" aria-label="menu" role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 6H20M4 12H20M4 18H20" stroke="#111111" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
+          <div class="menu-button w-nav-button" aria-label="menu" role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false" style="-webkit-user-select: text;">
+            <div class="menu-toggle" style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6H20M4 12H20M4 18H20" stroke="#111111" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
           </div>
         </div>
       </div>
@@ -446,15 +411,33 @@
     <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
   </div>
 
-  <!-- ==================== PROPERTIES DIRECTLY UNDER HEADER ==================== -->
-  <section class="properties-section-clean">
+  <!-- ==================== MAIN PROPERTIES LISTINGS (PASTE 2) ==================== -->
+  <section id="main" class="properties-section-clean">
     <div class="w-layout-blockcontainer container w-container">
 
-      <!-- Complete Properties Grid (All Non-Stock Verified Media with External Views & Direct Links) -->
+      <!-- Filter and Sort Bar -->
+      <div class="filter-sort-bar">
+        <div class="filter-tabs">
+          <button type="button" class="filter-btn active" data-filter="all">All Properties</button>
+          <button type="button" class="filter-btn" data-filter="residential">Residential Homes</button>
+          <button type="button" class="filter-btn" data-filter="land">Land &amp; Plots</button>
+          <button type="button" class="filter-btn" data-filter="commercial">Commercial</button>
+        </div>
+        <div class="sort-control-wrap">
+          <label for="sort-select" class="sort-label">Sort by:</label>
+          <select id="sort-select" class="sort-select">
+            <option value="featured">Featured First</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Complete Properties Grid (20 Properties) -->
       <div class="property-grid-custom" id="properties-grid">
         
         <!-- ITEM 1: Life Camp Residential Plot -->
-        <div class="prop-card">
+        <div class="prop-card" data-category="land" data-price="80000" data-order="1">
           <div class="prop-media-wrapper">
             <span class="prop-tag-badge">Distress Sale</span>
             <a href="https://houseforsale.africa/properties/prime-850sqm-plot-life-camp-abuja" style="display: block; width: 100%; height: 100%;">
@@ -489,7 +472,7 @@
         </div>
 
         <!-- ITEM 2: Jabi 4-Bedroom Terrace Duplex -->
-        <div class="prop-card">
+        <div class="prop-card" data-category="residential" data-price="467000" data-order="2">
           <div class="prop-media-wrapper">
             <span class="prop-tag-badge">Lakeview Luxury</span>
             <a href="https://houseforsale.africa/properties/4-bedroom-terrace-duplex-jabi-abuja" style="display: block; width: 100%; height: 100%;">
@@ -524,7 +507,7 @@
         </div>
 
         <!-- ITEM 3: Mabushi 2-Bedroom Luxury Apartment -->
-        <div class="prop-card">
+        <div class="prop-card" data-category="residential" data-price="113000" data-order="3">
           <div class="prop-media-wrapper">
             <span class="prop-tag-badge">Move-in Ready</span>
             <a href="https://houseforsale.africa/properties/mabushi-2bed-apartment" style="display: block; width: 100%; height: 100%;">
@@ -559,7 +542,7 @@
         </div>
 
         <!-- ITEM 4: 3rd Avenue Gwarinpa 5-Bedroom Smart Duplex -->
-        <div class="prop-card">
+        <div class="prop-card" data-category="residential" data-price="567000" data-order="4">
           <div class="prop-media-wrapper">
             <span class="prop-tag-badge">Smart Home</span>
             <a href="https://houseforsale.africa/properties/5-bedroom-smart-duplex-gwarinpa" style="display: block; width: 100%; height: 100%;">
@@ -594,7 +577,7 @@
         </div>
 
         <!-- ITEM 5: Apo Luxury Detached Duplex -->
-        <div class="prop-card">
+        <div class="prop-card" data-category="residential" data-price="500000" data-order="5">
           <div class="prop-media-wrapper">
             <span class="prop-tag-badge">Pool &amp; Elevator</span>
             <a href="https://houseforsale.africa/properties/luxury-duplex-apo-abuja" style="display: block; width: 100%; height: 100%;">
@@ -629,7 +612,7 @@
         </div>
 
         <!-- ITEM 6: Asokoro Prime Residential Land -->
-        <div class="prop-card">
+        <div class="prop-card" data-category="land" data-price="867000" data-order="6">
           <div class="prop-media-wrapper">
             <span class="prop-tag-badge">Diplomatic Zone</span>
             <a href="https://houseforsale.africa/properties/prime-1051sqm-plot-asokoro-abuja" style="display: block; width: 100%; height: 100%;">
@@ -663,10 +646,8 @@
           </div>
         </div>
 
-        <!-- ==================== BATCH 2 (LOAD MORE ITEMS) ==================== -->
-
         <!-- ITEM 7: Guzape 7-Bedroom Standalone Triplex -->
-        <div class="prop-card hidden-card">
+        <div class="prop-card" data-category="residential" data-price="1000000" data-order="7">
           <div class="prop-media-wrapper">
             <span class="prop-tag-badge">Luxury Estate</span>
             <a href="https://houseforsale.africa/properties/7-bedroom-standalone-triplex-guzape-abuja" style="display: block; width: 100%; height: 100%;">
@@ -701,7 +682,7 @@
         </div>
 
         <!-- ITEM 8: Guzape Main 8-Bedroom Duplex + Flat -->
-        <div class="prop-card hidden-card">
+        <div class="prop-card" data-category="residential" data-price="1733000" data-order="8">
           <div class="prop-media-wrapper">
             <span class="prop-tag-badge">C of O + R of O</span>
             <a href="https://houseforsale.africa/properties/8-bedroom-detached-duplex-guzape-main-abuja" style="display: block; width: 100%; height: 100%;">
@@ -733,7 +714,7 @@
         </div>
 
         <!-- ITEM 9: Asokoro 2 Detached Duplexes -->
-        <div class="prop-card hidden-card">
+        <div class="prop-card" data-category="residential" data-price="3067000" data-order="9">
           <div class="prop-media-wrapper">
             <span class="prop-tag-badge">C of O Title</span>
             <a href="https://houseforsale.africa/properties/2-detached-duplexes-asokoro-abuja" style="display: block; width: 100%; height: 100%;">
@@ -765,7 +746,7 @@
         </div>
 
         <!-- ITEM 10: Asokoro 6-Bedroom Luxury Terrace + BQ -->
-        <div class="prop-card hidden-card">
+        <div class="prop-card" data-category="residential" data-price="57000" data-order="10">
           <div class="prop-media-wrapper">
             <span class="prop-tag-badge">Fully Finished</span>
             <a href="https://houseforsale.africa/properties/6-bedroom-luxury-terrace-asokoro-abuja" style="display: block; width: 100%; height: 100%;">
@@ -800,7 +781,7 @@
         </div>
 
         <!-- ITEM 11: Life Camp Luxury 3-Bedroom Terrace -->
-        <div class="prop-card hidden-card">
+        <div class="prop-card" data-category="residential" data-price="93000" data-order="11">
           <div class="prop-media-wrapper">
             <span class="prop-tag-badge">Gated Estate</span>
             <a href="https://houseforsale.africa/properties/luxury-3-bedroom-terrace-life-camp-abuja" style="display: block; width: 100%; height: 100%;">
@@ -832,7 +813,7 @@
         </div>
 
         <!-- ITEM 12: Idu 3-Bedroom Serviced Terrace -->
-        <div class="prop-card hidden-card">
+        <div class="prop-card" data-category="residential" data-price="93000" data-order="12">
           <div class="prop-media-wrapper">
             <span class="prop-tag-badge">Fully Serviced</span>
             <a href="https://houseforsale.africa/properties/3-bedroom-serviced-terrace-idu-abuja" style="display: block; width: 100%; height: 100%;">
@@ -863,10 +844,8 @@
           </div>
         </div>
 
-        <!-- ==================== BATCH 3 (LOAD MORE ITEMS) ==================== -->
-
         <!-- ITEM 13: Idu Airbnb Standard 2-Bed Apartment -->
-        <div class="prop-card hidden-card">
+        <div class="prop-card" data-category="residential" data-price="67000" data-order="13">
           <div class="prop-media-wrapper">
             <span class="prop-tag-badge">Airbnb Ready</span>
             <a href="https://houseforsale.africa/properties/2-bedroom-airbnb-apartment-idu-abuja" style="display: block; width: 100%; height: 100%;">
@@ -901,7 +880,7 @@
         </div>
 
         <!-- ITEM 14: Wuye 34-Office Commercial Building -->
-        <div class="prop-card hidden-card">
+        <div class="prop-card" data-category="commercial" data-price="3000000" data-order="14">
           <div class="prop-media-wrapper">
             <span class="prop-tag-badge">Sale or Lease</span>
             <a href="https://houseforsale.africa/properties/34-office-commercial-complex-wuye-abuja" style="display: block; width: 100%; height: 100%;">
@@ -936,7 +915,7 @@
         </div>
 
         <!-- ITEM 15: Wuse II 5,000 SQM Institutional Land -->
-        <div class="prop-card hidden-card">
+        <div class="prop-card" data-category="commercial" data-price="5000000" data-order="15">
           <div class="prop-media-wrapper">
             <span class="prop-tag-badge">Commercial Land</span>
             <a href="https://houseforsale.africa/properties/5000sqm-commercial-land-wuse-2-abuja" style="display: block; width: 100%; height: 100%;">
@@ -968,7 +947,7 @@
         </div>
 
         <!-- ITEM 16: Life Camp 3,800 SQM Residential Land -->
-        <div class="prop-card hidden-card">
+        <div class="prop-card" data-category="land" data-price="1330000" data-order="16">
           <div class="prop-media-wrapper">
             <span class="prop-tag-badge">Residential Land</span>
             <a href="https://houseforsale.africa/properties/3800sqm-residential-land-life-camp-abuja" style="display: block; width: 100%; height: 100%;">
@@ -1000,7 +979,7 @@
         </div>
 
         <!-- ITEM 17: Utako 2,985 SQM Land with C of O + R of O -->
-        <div class="prop-card hidden-card">
+        <div class="prop-card" data-category="land" data-price="1330000" data-order="17">
           <div class="prop-media-wrapper">
             <span class="prop-tag-badge">C of O + R of O</span>
             <a href="https://houseforsale.africa/properties/2985sqm-residential-land-utako-abuja" style="display: block; width: 100%; height: 100%;">
@@ -1035,7 +1014,7 @@
         </div>
 
         <!-- ITEM 18: Kukwaba 4,600 SQM Mixed-Use Land -->
-        <div class="prop-card hidden-card">
+        <div class="prop-card" data-category="land" data-price="653000" data-order="18">
           <div class="prop-media-wrapper">
             <span class="prop-tag-badge">C of O Title</span>
             <a href="https://houseforsale.africa/properties/4600sqm-mixed-use-land-kukwaba-abuja" style="display: block; width: 100%; height: 100%;">
@@ -1067,7 +1046,7 @@
         </div>
 
         <!-- ITEM 19: Jahi 3,077 SQM Commercial Land for Lease -->
-        <div class="prop-card hidden-card">
+        <div class="prop-card" data-category="commercial" data-price="17000" data-order="19">
           <div class="prop-media-wrapper">
             <span class="prop-tag-badge">Long Lease</span>
             <a href="https://houseforsale.africa/properties/3077sqm-commercial-land-lease-jahi-abuja" style="display: block; width: 100%; height: 100%;">
@@ -1102,7 +1081,7 @@
         </div>
 
         <!-- ITEM 20: Bwari 1.1 Hectares Recreational Bareland -->
-        <div class="prop-card hidden-card">
+        <div class="prop-card" data-category="land" data-price="33000" data-order="20">
           <div class="prop-media-wrapper">
             <span class="prop-tag-badge">1.1 Hectares</span>
             <a href="https://houseforsale.africa/properties/recreational-land-bwari-abuja" style="display: block; width: 100%; height: 100%;">
@@ -1135,73 +1114,10 @@
 
       </div>
 
-      <!-- Load More Button -->
-      <div class="load-more-container">
-        <button id="load-more-btn" type="button" class="load-more-btn">
-          <span>Load More Properties</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
-        </button>
-      </div>
-
-      <!-- Trust Checkmarks Bar -->
-      <div class="properties-trust-bar">
-        <div class="trust-bar-item">
-          <span class="trust-check-icon">✓</span>
-          <span>100% Legal Title Guarantee</span>
-        </div>
-        <div class="trust-bar-item">
-          <span class="trust-check-icon">✓</span>
-          <span>24/7 Diaspora Concierge Support</span>
-        </div>
-        <div class="trust-bar-item">
-          <span class="trust-check-icon">✓</span>
-          <span>Secure Escrow &amp; Remote Closings</span>
-        </div>
-      </div>
-
     </div>
   </section>
 
-  <!-- ==================== RECEIVE ALERTS / CTA SECTION ==================== -->
-  <section id="alerts" class="cta-section" style="background-image: linear-gradient(180deg, rgba(15, 15, 15, 0.8) 0%, rgba(15, 15, 15, 0.9) 100%), url('https://i.ibb.co/bGkXDFC/bradley-pritchard-jones-BZkui1-Wkj8-Y-unsplash.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; padding: 100px 0;">
-    <div class="w-layout-blockcontainer container w-container">
-      <div class="cta-wrapper">
-        <div class="common-heading-div text-center">
-          <h2 class="white-text">Receive Alerts for New Listings</h2>
-          <p class="large-paragraph cta-paragraph" style="color: #e0e0e0; max-width: 540px; margin: 10px auto 0 auto;">
-            Get early access to high-potential properties and distress deals straight from our brief.
-          </p>
-          <div style="max-width: 540px; margin: 30px auto 0 auto;">
-            <form id="waitlist-form" action="https://formspree.io/f/mkjwjyng" method="POST" style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
-              <input type="email" name="email" placeholder="Enter your email address" required="" aria-label="Email address" autocomplete="email" inputmode="email" style="padding: 14px 20px; border-radius: 8px; border: 1px solid #ccc; flex: 1; min-width: 260px; font-size: 16px;">
-              <button id="waitlist-submit-btn" type="submit" class="button button-text-only" style="background: #111111 !important; color: #ffffff !important; cursor: pointer; min-width: 175px; border: 1px solid #333;">
-                Get Listing Alerts
-              </button>
-            </form>
-            <div id="waitlist-error" role="alert" style="display: none; padding: 14px 20px; background: rgba(255, 68, 68, 0.12); border: 1px solid #FF4444; border-radius: 8px; margin-top: 20px; text-align: center;">
-              <p style="color: #FF6B6B; font-size: 14px; font-weight: 600; margin: 0;">Oops! There was a problem submitting your email. Please try again.</p>
-            </div>
-            <div style="margin-top: 24px; text-align: center;">
-              <a href="https://chat.whatsapp.com/INbfg9gBwnFCKoypELaXuB?mode=gi_t" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; color: #ffffff !important; text-decoration: underline; font-weight: 600; font-size: 15px;">
-                Join Property WhatsApp Group
-              </a>
-            </div>
-            <div id="waitlist-success" role="status" style="display: none; padding: 20px; background: rgba(38, 255, 121, 0.1); border: 1px solid #26FF79; border-radius: 8px; margin-top: 20px; text-align: center;">
-              <p style="color: #26FF79; font-size: 18px; font-weight: 600; margin: 0;">🎉 You're on the Alert List!</p>
-              <p style="color: #ffffff; font-size: 14px; margin-top: 6px; margin-bottom: 14px;">We'll send you early dossiers and video tours as soon as vetted listings go live.</p>
-              <p style="margin: 0;">
-                <a href="https://chat.whatsapp.com/INbfg9gBwnFCKoypELaXuB?mode=gi_t" target="_blank" rel="noopener noreferrer" style="color: #ffffff !important; text-decoration: underline; font-weight: 600; font-size: 14px;">
-                  Join Property WhatsApp Group
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== FOOTER ==================== -->
+  <!-- ==================== FOOTER (PASTE 2) ==================== -->
   <section id="footer" class="footer">
     <div class="w-layout-blockcontainer container w-container">
       <div class="footer-wrapper">
@@ -1210,12 +1126,9 @@
             <strong style="color: #000000 !important;">Houseforsale.africa</strong>
           </a>
           <div class="footer-link-div">
-            <a href="/#about-us" class="paragraph">About Us</a>
-            <a href="/properties" class="paragraph">Properties</a>
-            <a href="/#how-it-works" class="paragraph">How It Works</a>
-            <a href="/#presence" class="paragraph">Presence</a>
-            <a href="/#testimonials" class="paragraph">Testimonials</a>
-            <a href="/#alerts" class="paragraph">Get Alerts</a>
+            <a href="https://houseforsale.africa/properties" class="paragraph" style="font-weight: 700; color: #111111;">Buy</a>
+            <a href="https://houseforsale.africa/sell-a-property" class="paragraph">Sell</a>
+            <a href="https://houseforsale.africa/resources" class="paragraph">Resources</a>
           </div>
         </div>
         <div class="footer-line"></div>
@@ -1226,78 +1139,60 @@
     </div>
   </section>
 
-  <!-- Scripts -->
-  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6912d240c4d840129af0d1d2" type="text/javascript"></script>
+  <!-- ==================== ORIGINAL WEBFLOW SCRIPTS (PASTE 1) ==================== -->
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6912d240c4d840129af0d1d2" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="https://cdn.prod.website-files.com/6912d240c4d840129af0d1d2/js/webflow.schunk.e0c428ff9737f919.js" type="text/javascript"></script>
+  <script src="https://cdn.prod.website-files.com/6912d240c4d840129af0d1d2/js/webflow.schunk.f4d57349383e4d1e.js" type="text/javascript"></script>
   <script src="https://cdn.prod.website-files.com/6912d240c4d840129af0d1d2/js/webflow.88a8f953.fb89b7803247dc94.js" type="text/javascript"></script>
   
+  <!-- ==================== PROPERTIES FILTER & SORT ONLY ==================== -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      // Dynamic Load More Handler (loads 6 items per click)
-      var loadMoreBtn = document.getElementById("load-more-btn");
-      var batchSize = 6;
+      var filterButtons = document.querySelectorAll(".filter-btn");
+      var sortSelect = document.getElementById("sort-select");
+      var grid = document.getElementById("properties-grid");
+      var cards = Array.from(document.querySelectorAll(".prop-card"));
+      var currentFilter = "all";
 
-      if (loadMoreBtn) {
-        loadMoreBtn.addEventListener("click", function () {
-          var hiddenCards = document.querySelectorAll(".prop-card.hidden-card");
-          for (var i = 0; i < batchSize && i < hiddenCards.length; i++) {
-            hiddenCards[i].classList.remove("hidden-card");
-          }
-
-          var remaining = document.querySelectorAll(".prop-card.hidden-card");
-          if (remaining.length === 0) {
-            loadMoreBtn.style.display = "none";
-          }
-        });
-      }
-
-      var form = document.getElementById("waitlist-form");
-      var successDiv = document.getElementById("waitlist-success");
-      var errorDiv = document.getElementById("waitlist-error");
-      var submitBtn = document.getElementById("waitlist-submit-btn");
-
-      if (!form || !submitBtn) return;
-
-      function showError() {
-        if (errorDiv) errorDiv.style.display = "block";
-        submitBtn.textContent = "Get Listing Alerts";
-        submitBtn.disabled = false;
-      }
-
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        if (submitBtn.disabled) return;
-
-        submitBtn.textContent = "Submitting...";
-        submitBtn.disabled = true;
-        if (errorDiv) errorDiv.style.display = "none";
-
-        var data = new FormData(form);
-        fetch(form.action, {
-          method: "POST",
-          body: data,
-          headers: {
-            'Accept': 'application/json'
-          }
-        }).then(function (response) {
-          if (response.ok) {
-            form.style.display = "none";
-            if (errorDiv) errorDiv.style.display = "none";
-            if (successDiv) {
-              successDiv.style.display = "block";
-              var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-              if (!reduceMotion && successDiv.scrollIntoView) {
-                successDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-              }
-            }
-          } else {
-            showError();
-          }
-        }).catch(function () {
-          showError();
+      filterButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          filterButtons.forEach(function (b) { b.classList.remove("active"); });
+          this.classList.add("active");
+          currentFilter = this.getAttribute("data-filter");
+          applyFilterAndSort();
         });
       });
+
+      if (sortSelect) {
+        sortSelect.addEventListener("change", function () {
+          applyFilterAndSort();
+        });
+      }
+
+      function applyFilterAndSort() {
+        var sortValue = sortSelect ? sortSelect.value : "featured";
+
+        cards.sort(function (a, b) {
+          if (sortValue === "price-asc") {
+            return parseFloat(a.dataset.price) - parseFloat(b.dataset.price);
+          } else if (sortValue === "price-desc") {
+            return parseFloat(b.dataset.price) - parseFloat(a.dataset.price);
+          } else {
+            return parseInt(a.dataset.order) - parseInt(b.dataset.order);
+          }
+        });
+
+        cards.forEach(function (card) {
+          var category = card.getAttribute("data-category");
+          if (currentFilter === "all" || category === currentFilter) {
+            card.style.display = "flex";
+          } else {
+            card.style.display = "none";
+          }
+          grid.appendChild(card);
+        });
+      }
     });
   </script>
-
-</body></html>
+</body>
+</html>
